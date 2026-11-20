@@ -1,0 +1,14 @@
+.env
+storage/media/*
+storage/logs/*
+storage/tmp/*
+!storage/media/.gitkeep
+!storage/logs/.gitkeep
+!storage/tmp/.gitkeep
+.DS_Store
+.idea/
+.vscode/
+vendor/
+node_modules/
+layout_kelautanid_skills.md
+prd_kelautan_id_x_media_extractor.md

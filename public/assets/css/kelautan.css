@@ -1,0 +1,117 @@
+/* Panduan Standar Desain, Layout & Branding Kelautan.ID */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Abyssal Navy */
+  --abyssal-950: #060D18;
+  --abyssal-900: #0A192F;
+  --abyssal-800: #0F172A;
+  --abyssal-700: #1E293B;
+
+  /* Maritime Blue */
+  --maritime-900: #1E3A8A;
+  --maritime-800: #1E40AF;
+  --maritime-700: #1D4ED8;
+  --maritime-600: #2563EB;
+  --maritime-500: #0284C7;
+
+  /* Oceanic Cyan */
+  --ocean-400: #38BDF8;
+  --ocean-500: #0EA5E9;
+  --ocean-default: #06B6D4;
+  --ocean-cyan: #22D3EE;
+
+  /* Kanvas Netral */
+  --slate-50: #F8FAFC;
+  --slate-100: #F1F5F9;
+  --slate-200: #E2E8F0;
+  --slate-400: #94A3B8;
+  --slate-500: #64748B;
+  --slate-900: #0F172A;
+
+  /* Status */
+  --emerald-600: #059669;
+  --emerald-500: #10B981;
+  --amber-500: #F59E0B;
+  --rose-600: #E11D48;
+  --rose-500: #F43F5E;
+}
+
+html, body {
+  background-color: #F8FAFC;
+  color: #0F172A;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Gradients */
+.bg-oceanic-gradient {
+  background: linear-gradient(135deg, #0A192F 0%, #1E3A8A 50%, #0284C7 100%);
+}
+
+.bg-oceanic-card {
+  background: linear-gradient(135deg, rgba(10, 25, 47, 0.95) 0%, rgba(30, 58, 138, 0.95) 100%);
+}
+
+.bg-maritime-header {
+  background: linear-gradient(90deg, #0A192F 0%, #0F172A 40%, #1E3A8A 100%);
+}
+
+.text-gradient-ocean {
+  background: linear-gradient(90deg, #38BDF8 0%, #22D3EE 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.glass-panel-dark {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+/* Tombol Copy Feedback */
+.btn-copy.is-done {
+  background-color: #059669 !important;
+  color: #ffffff !important;
+  border-color: #059669 !important;
+}
+
+/* Loading button state */
+button.is-loading {
+  opacity: 0.75;
+  cursor: wait;
+  pointer-events: none;
+}
+
+/* Video & Image Containment in Preview */
+.media-preview-container {
+  background: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.media-preview-container video,
+.media-preview-container img {
+  max-height: 480px;
+  width: 100%;
+  object-fit: contain;
+}
